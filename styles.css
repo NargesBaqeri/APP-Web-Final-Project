@@ -1,0 +1,598 @@
+@font-face {
+    font-family:"viceroyal";
+    src: url(Viceroyal.ttf);
+
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "playfair display"
+}
+
+
+/* NAV*/
+nav{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #A89F68;
+    background-color:  rgb(50, 68, 55);
+    gap: 20px;
+    justify-content: right;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    width: 100%;  
+}
+nav a{
+    text-decoration: none;
+    color:#F5FDC6;
+    padding: 20px;
+    font-size: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+a:hover{
+    color:rgb(238, 190, 102);
+    font-weight: bold;
+}
+nav img{
+    
+    width: 50px;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    bottom: 0px;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: rgb(50, 68, 55);
+    color:#F5FDC6;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.footer-content{
+    width: 25%;
+}
+.footer-content p{
+    color: whitesmoke;
+
+}
+.footer-content a{
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    padding: 10px;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(238, 190, 102); 
+}
+.footer p{
+    margin: 0px;
+}
+
+
+
+/*Home*/
+.container{
+    background-color: #F5FDC6;
+}
+
+/*Header*/
+#header{
+    background-image: url(image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#header h1{
+    margin: 0px;
+    text-align: center;
+    font-size: 100px;
+    color:#C2C5AA;
+    padding-top: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 300px;
+   
+}
+
+
+#text1{
+    height: 100%;
+    width: 100%;
+}
+h2{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 30px;
+    word-wrap: wrap;
+    color: #414833;
+
+}
+.container p{
+    text-align: center;
+    font-size: 20px;
+    word-wrap: wrap;
+    padding: 40px;
+    margin-bottom: 100px;
+}
+/*Team*/
+#team{
+    background-image: url(image2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#team h2{
+    text-align: center;
+    color:#C2C5AA;
+    font-size: 80px;
+    padding-top: 200px;
+    padding-bottom: 300px;
+}
+
+#team a{
+    text-decoration: none;
+    font-weight: bolder;
+    border: 1px solid #C2C5AA;
+    color:#C2C5AA;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    left: 80px;
+    bottom: 80px;
+    border-radius: 30px;
+}
+#team a:hover{
+    background-color: #C2C5AA;
+    color: #414833;
+}
+/*Text2*/
+#text2{
+    height: 100%;
+    width: 100%; 
+    position: relative;
+}
+#text2 p{
+    padding-bottom: 300px;
+    margin-bottom: 0px;
+}
+#text2 a{
+    text-decoration: none;
+    font-weight: bolder ;
+    border: 1px solid #414833;
+    color: #414833;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    left: 80px;
+    bottom: 80px;
+    border-radius: 30px;
+}
+#text2 a:hover{
+    background-color: #414833;
+    color: #C2C5AA;
+}
+/*About */
+#img3{
+    background-image: url(image3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#img3 h2{
+    margin: 0px;
+    text-align: center;
+    font-size: 80px;
+    color:#C2C5AA;
+    padding-top: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 300px;
+}
+#img3 a{
+    text-decoration: none;
+    font-weight: bolder;
+    border: 2px solid #C2C5AA ;
+    color:#C2C5AA;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    left: 80px;
+    bottom: 80px;
+    border-radius: 30px;
+}
+#img3 a:hover{
+    background-color: #C2C5AA;
+    color: #414833;
+}
+
+
+
+
+
+
+
+/* Team page*/
+
+.team-header{
+    background-image: url(image2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.team-header h1{
+    margin: 0px;
+    text-align: center;
+    font-size: 80px;
+    color:#C2C5AA;
+    padding-top: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+}
+
+#team-container{
+    background-color: #F5FDC6;
+}
+#team-description{
+    background-color:#CCD5AE ;
+    color:#414833;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding: 50px;
+    border-radius: 30px;
+}
+.team{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+.team img{
+    width: 200px;
+    width: 30%;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+.team div{
+    width: 60%;
+    background-color: #CCD5AE;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+/* About page*/
+#about-container{
+    background-color:#F5FDC6;
+    margin: 0px;
+    padding: 0px;
+}
+#about-header{
+    background-image:url(about/clinic1\ \(9\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#about-header h1{
+    margin: 0px;
+    text-align: center;
+    font-size: 50px;
+    color:#C2C5AA;
+    padding-top: 230px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+    
+}
+#about-description{
+    background-color: #828C51;
+    margin: 100px;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    color:#F5FDC6;
+    font-size: 30px;
+}
+#about-h2{
+    color:#414833;
+    margin-bottom: 150px;
+}
+
+#about-information div{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    border: 1px solid #828C51;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    color:#414833;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#about-gallery{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+#about-gallery img{
+    width: 300px;
+    width: 45%;
+    border-radius: 30px;
+}
+#about-information div:hover{
+    background-color:#828C51;
+    color:#F5FDC6;
+}
+#about-information img{
+    width: 90px;
+    width: 10%;
+}
+#about-information p{
+    width: 80%;
+    font-size: larger;
+    padding-top: 17px;
+}
+#boldy{
+    font-weight: bold;
+    color: #414833;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding: 50px;
+}
+
+
+
+/*Service page*/
+.service-header{
+    background-image: url(service/service.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.service-header h1{
+    margin: 0px;
+    text-align: center;
+    font-size: 90px;
+    color:#C2C5AA;
+    padding-top: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+}
+
+#service-container{
+    background-color: #F5FDC6;
+    padding-bottom: 100px;
+
+}
+.service img{
+    width: 20%;
+}
+.service{
+    display: flex;
+    width: 90%;
+    border: 1px solid #828C51;
+    border-radius: 30px;
+    color:#414833;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+.service:hover{
+    background-color:#828C51;
+    color:#F5FDC6;
+}
+.service div{
+    width: 70%;
+}
+
+/* contact page*/
+#contact-container{
+    background-color: #F5FDC6;
+    margin: 0px;
+}
+.column2{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+}
+.column2-content{
+    width: 40%;
+    background-color:#CCD5AE;
+    border-radius: 20px;
+    padding: 20px;
+    
+
+}
+#contact-container h2{
+    margin-top: 0px;
+    padding-top: 150px;
+}
+
+
+
+/*MEDIA*/
+@media(max-width:600px){
+    nav{
+        gap: 5px;
+    }
+
+    nav a{
+        font-size: 10px; 
+        padding: 10px;
+    }
+    nav img{
+        width: 40px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-content{
+        width: 100%;
+        border-bottom: 1px solid #A89F68;
+        margin-bottom: 30px;
+    }
+    #header h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 30px;
+        word-wrap: break-word;
+    }
+    #team h2{
+        font-size: 50px;
+    }
+    #img3 h2{
+        font-size: 40px;
+    }
+    #about-header h1{
+        font-size: 35px;
+    } 
+    #about-description{
+        padding: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    #about-information img{
+        width: 50px;
+        height: 50px;
+    }
+    #about-gallery img{
+        width:90% ;
+    }
+    
+    .service-header h1{
+        font-size: 30px;
+        word-wrap:break-word;
+    }
+    .service img{
+        width: 100px;
+        height: 100px;
+    }
+    #team-description{
+        width:90%;
+        font-size: 17px;
+    }
+    .team-header h1{
+        font-size: 50px;
+    }
+    .team{
+        flex-wrap:wrap;
+        row-gap: 0px;
+
+    }
+    .team img{
+        width: 90%;
+    }
+    .team div{
+        width: 90%;
+    }
+    
+   
+}  
+@media(max-width:800px){
+
+    nav a{
+        font-size: 15px;
+        padding: 15px;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .footer-content{
+        width: 50%;
+        border-bottom: 1px solid #A89F68 ;
+        margin-bottom: 30px;
+    }
+    #about-description{
+        padding: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    #about-information img{
+        width: 150px;
+        height: 150px;
+    }
+    .service-header h1{
+        font-size: 60px;
+    }
+    .service img{
+        width: 120px;
+        height: 120px;
+    }
+    #team-description{
+        width:90%;
+        font-size: 25px;
+    }
+}
